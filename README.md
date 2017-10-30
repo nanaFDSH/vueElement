@@ -1,6 +1,6 @@
 # 项目网址
 
-https://www.hijs.cc/vueElement/#/login
+https://www.hijs.cc/vueElement/#/
 
 # pcvue
 
