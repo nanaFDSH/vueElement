@@ -2,7 +2,7 @@
 
 https://www.hijs.cc/vueElement/#/
 
-# pcvue
+# vue2.0 + element-ui
 
 > A Vue.js project
 
