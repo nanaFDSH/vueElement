@@ -32,13 +32,11 @@ exports.cssLoaders = function (options) {
       })
     }
 
-    // 设置正确的字体引用路径
     // Extract CSS when that option is specified
     // (which is the case during production build)
     if (options.extract) {
       return ExtractTextPlugin.extract({
         use: loaders,
-        publicPath: '../../',         // 注意配置这一部分，根据目录结构自由调整
         fallback: 'vue-style-loader'
       })
     } else {

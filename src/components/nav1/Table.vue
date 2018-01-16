@@ -26,17 +26,17 @@
         </el-table-column>
         <el-table-column prop="addr" label="地址" min-width="180">
         </el-table-column>
-        <el-table-column label="操作" width="150">
-          <template scope="scope">
-            <el-button size="small" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
-            <el-button type="danger" size="small" @click="handleDel(scope.$index, scope.row)">删除</el-button>
-          </template>
-        </el-table-column>
+        <!--<el-table-column label="操作" width="150">-->
+          <!--<template scope="scope">-->
+            <!--<el-button size="small" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>-->
+            <!--<el-button type="danger" size="small" @click="handleDel(scope.$index, scope.row)">删除</el-button>-->
+          <!--</template>-->
+        <!--</el-table-column>-->
       </el-table>
 
       <!--编辑界面-->
-      <el-dialog title="编辑" v-model="editFormVisible" :close-on-click-modal="false">
-        编辑
+      <!--<el-dialog title="编辑" v-model="editFormVisible" :close-on-click-modal="false">-->
+        <!--编辑-->
         <!--<el-form :model="editForm" label-width="80px" :rules="editFormRules" ref="editForm">-->
           <!--<el-form-item label="姓名" prop="name">-->
             <!--<el-input v-model="editForm.name" auto-complete="off"></el-input>-->
@@ -61,11 +61,11 @@
           <!--<el-button @click.native="editFormVisible = false">取消</el-button>-->
           <!--<el-button type="primary" @click.native="editSubmit" :loading="editLoading">提交</el-button>-->
         <!--</div>-->
-      </el-dialog>
+      <!--</el-dialog>-->
 
       <!--新增界面-->
-      <el-dialog title="新增" v-model="addFormVisible" :close-on-click-modal="false">
-        增加
+      <!--<el-dialog title="新增" v-model="addFormVisible" :close-on-click-modal="false">-->
+        <!--增加-->
         <!--<el-form :model="addForm" label-width="80px" :rules="addFormRules" ref="addForm">-->
           <!--<el-form-item label="姓名" prop="name">-->
             <!--<el-input v-model="addForm.name" auto-complete="off"></el-input>-->
@@ -90,7 +90,7 @@
           <!--<el-button @click.native="addFormVisible = false">取消</el-button>-->
           <!--<el-button type="primary" @click.native="addSubmit" :loading="addLoading">提交</el-button>-->
         <!--</div>-->
-      </el-dialog>
+      <!--</el-dialog>-->
 
     </template>
   </section>
@@ -141,7 +141,7 @@
           type: 'warning'
         }).then(() => {
           this.listLoading = true
-          // NProgress.start();
+//           NProgress.start()
 //          let para = { id: row.id }
 //          removeUser(para).then((res) => {
 //            this.listLoading = false
@@ -151,7 +151,7 @@
 //              message: '删除成功',
 //              type: 'success'
 //            })
-//
+
 //            this.getUsers()
 //          })
         }).catch(() => {

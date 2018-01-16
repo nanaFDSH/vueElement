@@ -76,8 +76,6 @@
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
   #login
-    background url('../assets/img/login-bg.png') no-repeat center
-    background-size 100% 100%
     position absolute
     width 100%
     height 100%

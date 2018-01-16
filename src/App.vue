@@ -7,6 +7,12 @@
 </template>
 
 <script>
+  import '@/assets/theme/0000ff/index.css'    // 换肤版本0000ff css
+  import '@/assets/theme/008000/index.css'    // 换肤版本008000 css
+  import '@/assets/theme/fa4f52/index.css'    // 换肤版本fa4f52 css
+  import '@/assets/theme/20a0ff/index.css'    // 换肤版本20a0ff css
+  import '@/assets/theme/00a597/index.css'    // 换肤版本00a597 css
+
   export default {
     name: 'app',
     components: {
@@ -28,12 +34,12 @@
       width: 100%
       .el-submenu
         .fa
-          color #e94b1b
+          color #333
           vertical-align: baseline
           margin-right: 10px
       .el-menu-item
         .fa
-          color #e94b1b
+          color #333
           vertical-align: baseline;
           margin-right: 10px
       .toolbar
